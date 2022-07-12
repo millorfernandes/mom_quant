@@ -3094,6 +3094,44 @@
                 cantina_coin: 1               
             output: 
                 dusk: [3, 10, 6.5]
+        # cantina Tuesday Tasks
+        bits_and_pieces:
+            display_name: Bits And Pieces
+            building: cantina
+            input: 
+                metal_bits: 4
+                electronic_bits: 1
+            output: 
+                dusk: [2, 5, 3.5]
+        scrubbing_supplies:
+            display_name: Scrubbing Supplies
+            building: cantina
+            input: 
+                ice: 275
+                metal_bits: 25
+                cantina_coin: 5
+            output: 
+                dusk: [30, 50, 40]
+                keycard_copper:: 0.0033
+        electric_boogie:
+            display_name: Electric Boogie
+            building: cantina
+            input: 
+                rover_wires: 2
+                electronic_bits: 2
+                siliconcrystals_raw: 2
+                cantina_coin: 6
+            output: 
+                dusk: [35, 65, 50]
+                keycard_copper:: 0.006
+        food_donations:
+            display_name: Food Donations
+            building: cantina
+            input: 
+                food: 15
+                cantina_coin: 1
+            output: 
+                dusk: [3, 10, 6.5]
         #event
     buildings:
         solar_panel:
