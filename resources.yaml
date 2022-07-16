@@ -108,7 +108,21 @@
             display_name: Faded Art
         candycane: 
             display_name: Candy Canes
-    recipes:
+        smelter_C1:
+            display_name: Common Smelter
+        cad-22_C1:
+            display_name: Common C.A.D. (22')
+        water_filter-22_C1:
+            display_name: Common Water Filter ('22)
+        greenhouse_C1:
+            display_name: Common Greenhouse
+        solar_panel-22_C1:
+            display_name: Common Solar Panel ('22)
+        chem_lab_C1:
+            display_name: Common Chem Labe
+        sab_reactor_C1:
+            display_name: Common Sabatier Reactor
+        recipes:
         # greenhouse
         plant_sprouts:
             display_name: Plant Sprouts
@@ -3322,7 +3336,73 @@
                 sunflower_seeds: 4
                 cantina_coin: 1
             output:
-                dusk: [3, 10, 6.5]                
+                dusk: [3, 10, 6.5]
+        smelted_dreams:
+            display_name: Smelted Dreams
+            building: cantina
+            day: sat
+            input: 
+                smelter_C1: 1
+            output: 
+                dusk: [2, 5, 3.5]                
+        cad_return:
+            display_name: CAD Return
+            building: cantina
+            day: sat
+            input: 
+                cad-22_C1: 1
+                cantina_coin: 2
+            output: 
+                dusk: [20, 30, 25]
+        water_filter_storage:
+            display_name: Water Filter Storage 
+            building: cantina
+            day: sat
+            input: 
+                water_filter-22_C1: 1
+                cantina_coin: 4
+            output: 
+                dusk: [25, 55, 40]
+                keycard_copper: 0.0074
+        greenhouse_overstock:
+            display_name: Greenhouse Overstock
+            building: cantina
+            day: sat
+            input: 
+                greenhouse_C1: 1
+                cantina_coin: 3
+            output: 
+                dusk: [30, 50, 40]
+                keycard_copper: 0.0033
+        solar_panel_repo:
+            display_name: Solar Panel Repo
+            building: cantina
+            day: sat
+            input: 
+                solar_panel-22_C1: 1
+                cantina_coin: 4
+            output: 
+                dusk: [35, 65, 50]
+                keycard_copper: 0.006                
+        chemical_redistribution:
+            display_name: Chemical Redistribution
+            building: cantina
+            day: sat
+            input: 
+                chem_lab_C1: 1
+                cantina_coin: 2
+            output: 
+                dusk: [10, 20, 15]
+        reactor_recovery:
+            display_name: Reactor Recovery
+            building: cantina
+            day: sat
+            input: 
+                sab_reactor_C1: 1
+                cantina_coin: 1
+            output: 
+                dusk: [3, 10, 6.5]
+                keycard_copper: 0.006                
         #event
     buildings:
         solar_panel:
